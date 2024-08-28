@@ -41,19 +41,19 @@
     --font-family: 'Xanh Mono', monospace;
     */
     --font-size: 14px;
-    --font-weight: 400; /* 200 : 900 */
+    --font-weight: 200; /* 200 : 900 */
     --line-height: 1.2;
 
-    --font-size-lyrics: 14px; /* 1.5em (default) */
+    --font-size-lyrics: 1em; /* 1.5em (default) */
 
     --font-family-header: "asciid";
     --font-size-multiplier-header: 4;
 
     --display-card-image: block; /* none | block */
-    --display-coverart-image: none; /* none | block */
-    --display-header-image: none; /* none | block */
-    --display-sidebar-image: block; /* none | block */
-    --display-tracklist-image: none; /* none | block */
+    --display-coverart-image: block; /* none | block */
+    --display-header-image: block; /* none | block */
+    --display-library-image: block; /* none | block */
+    --display-tracklist-image: block; /* none | block */
     --display-spicetify-banner-ascii: block; /* none | block */
     --display-music-banner-ascii: none; /* none | block */
 
@@ -140,14 +140,14 @@
 .main-view-container {
     overflow: hidden;
 }
-section:has(> .main-entityHeader-container),
+/*section:has(> .main-entityHeader-container),
 div:has(> .main-entityHeader-container) {
     margin-top: 0;
 }
 .main-entityHeader-container {
     height: unset !important;
     min-height: unset !important;
-}
+}*/
 .main-entityHeader-imageContainerNew {
     height: 128px;
     width: 128px;
@@ -605,7 +605,7 @@ form .main-topBar-searchBar:placeholder-shown {
 
 */
 .view-homeShortcutsGrid-shortcuts::before {
-    content: "   _________  ____  / /_(_) __/_  __      / /___  __(_)\A   / ___/ __ \\/ __ \\/ __/ / /_/ / / /_____/ __/ / / / /\A  (__  ) /_/ / /_/ / /_/ / __/ /_/ /_____/ /_/ /_/ / /\A /____/ .___/\\____/\\__/_/_/  \\__, /      \\__/\\__,_/_/\A     /_/                    /____/                      ";
+    content: "   _________  ____  / /_(_) __/_  __\A   / ___/ __ \\/ __ \\/ __/ / /_/ / / /\A  (__  ) /_/ / /_/ / /_/ / __/ /_/ /\A /____/ .___/\\____/\\__/_/_/  \\__, /      \A     /_/                    /____/                      ";
     white-space: pre-wrap;
     padding: 32px 0;
     color: var(--spice-banner);
