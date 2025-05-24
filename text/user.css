@@ -791,14 +791,15 @@ form .main-topBar-searchBar:placeholder-shown {
 }
 .player-controls__buttons,
 .main-nowPlayingBar-extraControls {
-    opacity: 0.25;
+    opacity: 0.35;
     transition: opacity var(--border-transition);
 }
 .player-controls__buttons:hover,
 .main-nowPlayingBar-extraControls:hover {
     opacity: 1;
 }
-.main-shuffleButton-button::before,
+/* commented to get back default-ish buttons */
+/*.main-shuffleButton-button::before,
 button[data-testid="control-button-shuffle"]::after,
 .ecHWOS
     button:has(
@@ -884,6 +885,11 @@ button:has(
         path[d="M13.536 4.488h-1.473a.75.75 0 1 0 0 1.5H16V2.051a.75.75 0 0 0-1.5 0v1.27A8.25 8.25 0 1 0 3.962 15.876a.75.75 0 0 0 .826-1.252 6.75 6.75 0 1 1 8.747-10.136Z"]
     )::before {
     content: "\21AA";
+}*/
+
+/* Hide the fullscreen button */
+button[data-testid="fullscreen-mode-button"] {
+    display: none !important;
 }
 
 /* connect bar */
